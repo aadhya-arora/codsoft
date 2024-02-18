@@ -1,0 +1,340 @@
+<html>
+    <style>
+      .m
+      {
+        display: inline-block;
+      }
+      .ed
+      {
+        display: inline-block;
+        background-color: white;
+        height: 240px;
+        margin-left: 60px;
+        
+      }
+        .header
+        {
+            display: inline-block;
+            background-color: white;
+            height: 60px;
+            width: 1590px;
+            padding: 10px;
+        }
+        .nav
+        {
+          
+            background-color: rgb(8, 8, 8);
+            height: 18px;
+            width:1590px;
+            padding: 10px;
+            margin-top: 10px;
+            display: inline-block;
+            margin-left: -20px;
+        }
+        .n
+        {
+            background-color: rgb(230, 11, 11);
+            height: 18px;
+            width:1590px;
+            padding: 10px;
+            display: inline-block;
+            margin-left: -20px;
+        }
+        .a
+        {
+            margin-left: 400px;
+            text-decoration: none;
+            color: rgb(247, 244, 244);
+            font-size: 15px;
+        }
+        .b
+        {
+            margin-left: 150px;
+            text-decoration: none;
+            color: rgb(247, 244, 244);
+            font-size: 13px; 
+        }
+        .c
+        {
+            text-decoration: none;
+            color:black;
+            
+        }
+        .yellow-bg {
+      background-color: yellow;
+    }
+        .p
+        {
+            display: inline-block;
+            color: grey;
+            margin-left: 300px;
+            text-align: center;
+            border-right: 1px solid rgb(231, 228, 228);
+            background-color:white;
+            padding-right: 10px;
+        }
+         
+        .slideshow-container {
+            width: 1590px; 
+            height: 500px;
+            margin-left: -20px;
+            overflow: hidden;
+            background-color:white;
+            
+        }
+        
+        .box
+        {
+              display: inline-block;
+              padding: 20px;
+        }
+      
+        .mySlides {
+            flex: 0 0 auto;
+        }
+
+        
+        .slide-box {
+            position: relative;
+        }
+
+       
+    
+         .slideshow-container:hover .mySlides {
+      animation: slide 5s infinite; /* You can adjust the duration as needed */
+    }
+.slideshow-container .mySlides {
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slideshow-container:hover .mySlides {
+      opacity: 1;
+    }
+
+    .slide-box {
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+
+    .slideshow-container:hover .slide-box {
+      transform: translateX(calc(-1590px * 1)); /* Adjust based on the number of slides */
+    }
+    
+    .img-visible {
+      opacity: 1;
+    }
+    @keyframes slide {
+      0%, 100% {
+        opacity: 0;
+      }
+      10%, 90% {
+        opacity: 1;
+      }
+    }
+    .img {
+      height: 500px;
+      width: 1590px;
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+    }
+    </style>
+    <script>
+       let slideIndex = 0;
+
+function showSlides() {
+  const slides = document.querySelectorAll('.mySlides');
+
+  slides.forEach((slide) => {
+    slide.classList.remove('img-visible');
+  });
+
+  slideIndex++;
+  if (slideIndex >= slides.length) {
+    slideIndex = 0;
+  }
+
+  const slideBox = document.querySelector('.slide-box');
+  slideBox.style.transform = `translateX(calc(-1590px * ${slideIndex}))`;
+
+  slides[slideIndex].classList.add('img-visible');
+}
+
+setInterval(showSlides, 5000);
+    </script>
+    <body>
+        <header class="header">
+          <img src="chit.jpg" style="height: 70px; display: inline-block;"> 
+          <p class="p">For more Information<br>give a miss call on<br><a style="color: black;">1800 267 1999</a><br></p> 
+          <p class="p" style="margin-left: 10px;">Admission Helpline<br><a style="color: black;">9501105714<br>9501105715</a></p>
+          <p class="p" style="margin-left: 10px;">Delhi & NCR<br>Helpline<br><a style="color: black;">9599368734</a></p>
+          <p class="p" style="margin-left: 10px;">WB/North East<br>Helpline<br><a style="color: black;">9810355724</a></p>
+          <p class="p" style="margin-left: 10px;">UP / Bihar / Jharkhand<br>Helpline<br><a style="color: black;">9873288076</a></p>
+          <p class="p" style="margin-left: 10px;">J&K / Rajasthan<br>Helpline<br><a style="color: black;">9501105716</a></p>
+          <p style="margin-left: 10px;text-align: left;display: inline-block;"><img src="w.jpg"><br>9859000000<br></p>
+        </header>
+            <nav class="nav">
+
+<a href="" class="a">Home</a>
+<a href="" class="a" style="margin-left: 30px;">About us</a>
+<a href="" class="a" style="margin-left: 30px;">Contact info</a>
+<a href="" class="a" style="margin-left: 30px;">Request for document</a>
+<a href="" class="a" style="margin-left: 30px;">IQAC</a>
+<a href="" class="a" style="margin-left: 30px;">Careers</a>
+<a href="" class="a" style="margin-left: 30px;">ChalERP</a>
+<a href="" class="a" style="margin-left: 30px;">For Recruiters</a>
+<a href="" class="a" style="margin-left: 30px;">Blogs</a>
+<a href="" class="a" style="margin-left: 30px;">Skillverse</a>
+<a href="" class="a" style="margin-left: 30px;">Contact Us</a>
+    </nav>
+    <nav class="n ">
+<a href="" class="b">ABOUT US</a>
+<a href="" class="b" style="margin-left: 30px;">OUR INSTITUTIONS</a>
+<a href="" class="b" style="margin-left: 30px;">UNDERGRADUATE PROGRAMS</a>
+<a href="" class="b" style="margin-left: 30px;">POSTGRADUATE PROGRAMS</a>
+<a href="" class="b" style="margin-left: 30px;">GLOBAL PROGRAMS</a>
+<a href="" class="b" style="margin-left: 30px;">Ph.D PROGRAMS</a>
+<a href="" class="b" style="margin-left: 30px;">ONLINE PROGRAMS</a>
+<a href="" class="b" style="margin-left: 30px;">RESEARCH</a>
+<a href="" class="c yellow-bg" style="margin-left: 60px;padding: 10px;">ADMISSIONS</a>
+    </nav>
+    <div class="slideshow-container">
+        <div class="slide-box">
+          <div class="mySlides">
+            <img src="p1.png" class="img">
+          </div>
+          <div class="mySlides">
+            <img src="p2.png" class="img">
+          </div>
+          <div class="mySlides">
+            <img src="p3.png" class="img">
+          </div>
+          <div class="mySlides">
+            <img src="p4.png" class="img">
+          </div>
+          <div class="mySlides">
+            <img src="p5.png" class="img">
+          </div>
+          
+      </div>
+    </div>
+      <br>
+      <div class="box" >
+       <img src="p6.png" style="border-radius: 10px; margin-left: 60px;display: inline-block;height: 60px;">
+       <p style="display: inline-block;margin-left: 20px;font-size: 30px;">EXPLORE YOUR POTENTIAL<br>WITH CHITKARA UNIVERSITY<br>
+      <p style="margin-left: 60px;color: rgb(125, 124, 124);margin-top: -20px;font-size: 20px;">Located 30 kms from Chandigarh, Chitkara University offers a world of learning
+        <br>that will help you reach your goals. Choose from our varied industry endorsed<br>programs. Learn from an outstanding faculty at our state-of-the-art teaching
+      <br>facilities. Explore unlimited opportunities to get placed with one of the 1500+<br>campus recruiters and meet other students with dreams as big as yours.</p>
+      </p>
+      </div>
+      <div class="box">
+        <div class="slideshow-container" style="width: 700px;height: 250px;">
+        <div class="slide-box">
+        <div class="mySlides">
+           <img src="s1.png" style="width: 700px; margin-left: 100px;height: 250px;">
+         </div> 
+         <div class="mySlides">
+          <img src="s2.png" style="width: 700px;margin-left: 100px;height: 250px;"></div>
+          <div class="mySlides">
+            <img src="s3.png" style="margin-left: 100px; width: 700px;height: 250px;">
+          </div>
+          <div class="mySlides">
+            <img src="s4.png" style="margin-left: 100px;height: 250px;width: 700px;">
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div style="background-color: rgb(172, 171, 171);height: 650px;width: 1590px;margin-left: -20px;">
+        <br>
+        <br>
+        <h1 style="margin-left: 60px;">Start Here To See Where That Might Take You</h1>
+        <div class="ed">
+          <img src="e1.png" style="height: 150px;"><br><br><br>
+          <a href="" style="margin-left: 10px;text-decoration: none;">Computer Science Engineering</a>
+        </div>
+        <div class="ed">
+          <img src="e2.png" style="height: 150px;"><br><br>
+          <a href="" style="margin-left: 60px;text-decoration: none;">Engineering <p style="margin-left: 30px;margin-top: -0.1px;">(Civil|Elec|ECE|Mech)</p></a>
+        </div>
+        <div class="ed">
+          <img src="e3.png" style="height: 150px;"><br><br>
+          <a href="" style="margin-left: 40px;text-decoration: none;">Computer Applications<p style="margin-left: 70px;margin-top: -0.1px;">BCA|MCA</p></a>
+        </div>
+        <div class="ed">
+          <img src="e4.png" style="height: 150px;"><br><br>
+          <a href="" style="margin-left: 60px;text-decoration: none;">Business|Economics<p style="margin-left: 70px;margin-top: -0.1px;">Accounting</p></a>
+        </div>
+        <div class="ed">
+          <img src="e5.png" style="height: 150px;"><br><br>
+          <a href="" style="margin-left: 60px;text-decoration: none;">Hospitality|Culinary<p style="margin-left: 70px;margin-top: -0.1px;">Pastry Arts</p></a>
+        </div>
+        <br>
+        <div class="ed" style="margin-top: 10px;">
+          <img src="e6.png" style="height: 150px;width: 230px;"><br><br>
+          <a href="" style="margin-left: 50px;text-decoration: none;">Design|Architecture<p style="margin-left: 30px; margin-top: -0.1px;">Interior Design|Fine Arts</p></a>
+        </div>
+        <div class="ed">
+          <img src="e7.png" style="height:150px"><br><br>
+          <a href="" style="margin-left: 50px;text-decoration: none;">Allied Healthcare<p style="margin-left: 50px;margin-top: -0.1px;">Nursing|Dietetics</p></a>
+        </div>
+        <div class="ed">
+          <img src="e8.png" style="height: 150px;"><br><br>
+          <a href="" style="margin-left: 60px;text-decoration: none;">Pharmacy<p style="margin-left: 40px;margin-top: -0.1px;">Pharmacovigilance</p></a>
+        </div>
+        <div class="ed">
+          <img src="e9.png" style="height: 150px;"><br><br>
+          <a href="" style="margin-left: 60px;text-decoration: none;">Journalism<p style="margin-left: 40px;margin-top: -0.1px;">Mass Communication</p></a>
+        </div>
+        <div class="ed">
+          <img src="e10.png" style="height: 150px;"><br><br>
+          <a href="" style="margin-left: 70px;text-decoration: none;">Marine<p style="margin-left: 40px;margin-top: -0.1px;">B.Sc Natural Science</p></a>
+        </div>
+      </div>
+      <div class="m">
+        <div style="margin-top: 30px;">
+         <h2 style="margin-left: 40px;">Events</h2>
+         <img src="b1.png" style="margin-left: 60px;"><br>
+         <a href="" style="margin-left: 60px;text-decoration: none;">Elevate Global Health Insight with Chitkara’s<p style="margin-left: 60px;margin-top: -0.1px;"> EUHEALTH Certificate Course</p></a>
+         <img src="b2.png" style="margin-left: 60px;"><br>
+         <a href="" style="margin-left: 60px;text-decoration: none;">Chitkara University Gears Up for Second Edition of <p style="margin-left: 60px;margin-top: -0.1px;">Lit Fest</p></a>
+         <a href="" style="margin-left: 60px;color: red;text-decoration: none;">All events</a>
+        </div>
+      </div>
+      <div class="m">
+      <div style="margin-top: 30px;">
+        <h2 style="margin-left: 20px;">News & Updates</h2>
+        <img src="b3.png" style="margin-left: 20px;height: 180px;"><br><br>
+        <img src="b4.png" style="margin-left: 20px;height: 180px;"><br>
+        <a href="" style="text-decoration: none;margin-left: 20px;color: red;">Read All News</a><br><br>
+        </div>
+      </div>
+      <div class="m" style="border-color: rgb(95, 95, 95); margin-left:20px ;border-width: 2px;border-style: double;width: 400px;height: 370px;">
+        <center><div style="background-color: yellow;color: black;font-size: 40px;">
+         Admissions 2024
+        </div>
+      </center><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">MBA(Mktg | Finance | HR | Supply Chain | Analytics)</a><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">MBA (Healthcare | Health IT)</a>  
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">MBA Sales (Retail | Pharma | BFSI)</a><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">B.E. (CSE | Civil | ECE | Electrical<br> | Mechatronics )</a><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">B.Sc Nautical Science</a><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">BCA | MCA | Integrated BCA-MCA</a><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">BBA | IPM | B. Com | ACCA | Economics</a><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">UX/UI | Comm | Product | Fashion | Animation</a><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">Architecture | Interior Design | Fine Arts</a><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">Law 5-Year B.A. LL.B. (Hons.)</a><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">Hotel Management | Culinary Arts | Pastry Arts</a><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">Mass Comm (Digital | TV | Radio | Print)</a><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">Pharmacy | Pharmacovigilance</a><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">Nursing | Allied Healthcare | Physio | Optom</a><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">Teacher Training B.Ed | M.Ed | Psychology</a><br>
+      <a href="" style="font-size: 15px;text-decoration: none;color: rgb(70, 69, 69);margin-left: 5px;">Doctoral Programs</a><br>
+      <br>
+      <br>
+      <br>
+      
+    </div>
+    </body>
+</html>
